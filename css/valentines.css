@@ -1,0 +1,81 @@
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      text-align: center;
+      background: linear-gradient(135deg, #ff6c89, #fff5f7);
+      margin: 0;
+      padding: 50px;
+    }
+
+    h1 {
+      color: #ff4d6d;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #444;
+      font-size: 18px;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 28px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    .btn-YES {
+      background-color: #ff4d6d;
+      color: white;
+    }
+    .btn-YES:hover {
+      background-color: #e84362;
+      transform: scale(1.1);
+    }
+    
+
+    .btn-NO {
+      background-color: #4dafff;
+      color: white;
+    }
+    .btn-NO:hover {
+      background-color: #3b8ed6;
+      transform: scale(1.1);
+    }
+
+    #message {
+      margin-top: 30px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
+      min-height: 40px;
+    }
+
+    /* Floating hearts */
+    .heart {
+      position: absolute;
+      color: #fe002f;
+      font-size: 24px;
+      animation: float 4s linear infinite;
+      top: 100%;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0) scale(1); opacity: 1; }
+      100% { transform: translateY(-600px) scale(1.5); opacity: 0; }
+    }
+
+    /* Smooth fade for GIF */
+    #gifImage {
+      transition: opacity 0.5s ease;
+      max-width: 300px;
+      margin-top: 20px;
+    }
+    .fade-out {
+      opacity: 0;
+    }
